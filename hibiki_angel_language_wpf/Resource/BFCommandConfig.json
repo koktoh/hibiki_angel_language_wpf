@@ -1,0 +1,42 @@
+{
+  "Increment": {
+    "Command": "響ちゃん",
+    "CommandType": "Increment"
+  },
+  "Decrement": {
+    "Command": "かわいい",
+    "CommandType": "Decrement"
+  },
+  "MoveRight": {
+    "Command": "天使",
+    "CommandType": "MoveRight"
+  },
+  "MoveLeft": {
+    "Command": "結婚しよ",
+    "CommandType": "MoveLeft"
+  },
+  "RoopHead": {
+    "Command": "マジ",
+    "CommandType": "RoopHead"
+  },
+  "RoopTale": {
+    "Command": "かなさんどー",
+    "CommandType": "RoopTale"
+  },
+  "Read": {
+    "Command": "尊い",
+    "CommandType": "Read"
+  },
+  "Write": {
+    "Command": "愛してる",
+    "CommandType": "Write"
+  },
+  "BeginComment": {
+    "Command": "#",
+    "CommandType": "BeginComment"
+  },
+  "EndComment": {
+    "Command": ";",
+    "CommandType": "EndComment"
+  }
+}
