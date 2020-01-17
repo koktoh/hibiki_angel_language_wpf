@@ -1,0 +1,29 @@
+﻿<Window x:Class="BFWpf.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        mc:Ignorable="d"
+        Title="響ちゃんマジ天使言語" Height="450" Width="800" WindowStyle="SingleBorderWindow" Icon="hibiki.ico">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <GroupBox Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Margin="5" Header="Code Editor" FontSize="15">
+            <TextBox Margin="5" Name="CodeEditor" TextWrapping="Wrap" AcceptsReturn="True" FontSize="15" VerticalScrollBarVisibility="Auto" Text="{Binding CodeText}" />
+        </GroupBox>
+        <GroupBox Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1" Margin="5" Header="Output" FontSize="15">
+            <TextBlock Margin="5" Name="Output" TextWrapping="Wrap" FontSize="15" Text="{Binding Output}" />
+        </GroupBox>
+        <Button Grid.Column="2" Grid.Row="2" Content="Run" Height="20" Width="100" Margin="5" Command="{Binding RunCommand}" />
+    </Grid>
+</Window>
